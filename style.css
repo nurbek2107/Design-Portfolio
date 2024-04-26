@@ -1,0 +1,94 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .right button{
+    border: none;
+    background-color: #030303;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+nav .right button:hover{
+    background-color: #755CDE;
+    cursor: pointer;
+}
+main .card1{
+    text-align: center;
+}
+main .card1 h1{
+    font-family: 'Plus Jakarta Sans-700';
+    font-size: 56px;
+    color: #030303;
+    line-height: 70.56px;
+}
+main .card1 p{
+    color: #7A746E;
+    font-family: 'Plus Jakarta Sans-500';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+.card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left_img left_img center center_img right_img right_img"
+        "left_img left_img bottom_img bottom_img right_buttom_img right_buttom_img";
+}
+
+.left_img {
+    grid-area: left_img;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #755CDE;
+}
+.item1 {
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans-700';
+    color: #fff;
+    line-height: 30.24px;
+    align-self: flex-end;
+}
+
+.item2 {
+    align-self: flex-start;
+    margin-bottom: 94px;
+}
+
+.center {
+    grid-area: center;
+}
+
+.center_img {
+    grid-area: center_img;
+}
+
+.bottom_img {
+    grid-area: bottom_img;
+}
+
+.right_img {
+    grid-area: right_img;
+}
+
+.right_buttom_img {
+    grid-area: right_buttom_img;
+}
+
+
+
+
