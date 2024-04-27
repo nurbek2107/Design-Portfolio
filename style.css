@@ -28,100 +28,166 @@ main .card1 h1{
     line-height: 70.56px;
 }
 main .card1 p{
+    max-width: 730px;
+    margin:  0px auto;
     color: #7A746E;
     font-family: 'Plus Jakarta Sans-500';
     font-size: 18px;
     line-height: 28px;
 }
 
-
-
-
-
-
-
 .card2{
-    margin-bottom: 136px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 30px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "left_img left_img center center_img right_img right_img"
-        "left_img left_img bottom_img bottom_img right_buttom_img right_buttom_img";
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-.left_img {
-    grid-area: left_img;
+.card2 .left{
     display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    border-radius: 10px;
     background-color: #755CDE;
+    border-radius: 15px;
+    padding: 20px;
 }
-.item1 {
+
+.card2  p{
+    align-self:flex-end;
+    color: #FFFFFF;
     font-size: 24px;
-    font-family: 'Plus Jakarta Sans-700';
-    color: #fff;
     line-height: 30.24px;
-    align-self: flex-end;
+    font-family: 'Plus Jakarta Sans-700';
 }
-
-.item2 {
+.card2 .left img{
+    padding-bottom: 94px;
     align-self: flex-start;
-    margin-bottom: 94px;
 }
-
-.center {
-    grid-area: center;
-        display: flex;
-            justify-content: space-between;
-            padding: 24px;
-            border-radius: 10px;
-            background-color: #F6A560;
-}
-
-
-.center_img {
-    grid-area: center_img;
-            display: flex;
-                justify-content: space-between;
-                padding: 24px;
-                border-radius: 10px;
-                background-color: #F39E9E;
-}
-
-.bottom_img {
-    grid-area: bottom_img;
-        display: flex;
-            justify-content: space-between;
-            padding: 24px;
-            border-radius: 10px;
-            background-color: #EB7565;
-}
-
-.right_img {
-    grid-area: right_img;
+.card2 .center .top{
     display: flex;
-        justify-content: space-between;
-        padding: 24px;
-        border-radius: 10px;
-        background-color: #61C4B7;
+    gap: 24px;
 }
-
-.right_buttom_img {
-    grid-area: right_buttom_img;
+.card2 .center .top .left{
         display: flex;
-            justify-content: space-between;
-            padding: 24px;
-            border-radius: 10px;
-            background-color: #552049;
+            background-color: #F6A560;
+            border-radius: 15px;
+            padding: 20px; 
 }
+.card2 .center .top .right {
+    display: flex;
+    background-color: #F39E9E;
+    border-radius: 15px;
+    padding: 20px;
+}
+.card2 .center .top .right img {
+    padding-bottom: 94px;
+    align-self: flex-start;
+}
+.card2 .center .bottom {
+        margin-top: 24px;
+        display: flex;
+            background-color: #EB7565;
+            border-radius: 15px;
+            justify-content: space-between;
+            padding: 20px;
+}
+.card2 .center .bottom  img {
+    padding-bottom: 94px;
+    align-self: flex-start;
+    }
+
+    .card2 .right .top{
+                    display: flex;
+                    background-color: #61C4B7;
+                    border-radius: 15px;
+                    justify-content: space-between;
+                    padding: 20px;
+    }
+        .card2 .right .bottom {
+            margin-top: 24px;
+            display: flex;
+            background-color: #552049;
+            border-radius: 15px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+            .card2 .right .top img {
+                padding-bottom: 94px;
+                align-self: flex-start;
+            }
+                .card2 .right .bottom img {
+                    padding-bottom: 94px;
+                    align-self: flex-start;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .card3 {
+    margin-top: 130px;
     display: flex;
     align-items: center;
     gap: 125px;
@@ -132,12 +198,15 @@ main .card1 p{
 .card3 .right h1{
     font-family: 'Plus Jakarta Sans-700';
     font-size: 40px;
+    max-width: 540px;
     line-height: 50.4px;
     color: #030303;
     margin-bottom: 34px;
 }
 .card3 .right p{
     color: #7A746E;
+    max-width: 540px;
+
     font-family: 'Plus Jakarta Sans-500';
     font-size: 18px;
     line-height: 28px;
@@ -166,13 +235,105 @@ main .card1 p{
 }
 
 
+.corusel{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    gap: 30px;
+}
+.corusel img{
+    max-width: 100%;
+}
 
+.corusel_klict{
+    margin-top: 80px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.corusel_klict .left{
+    background-color: #030303;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.corusel_klict .right {
+    background-color: #030303;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.corusel_klict .right:hover{
+    background-color: #755CDE;
+    cursor: pointer;
+}
+.corusel_klict .left:hover {
+    background-color: #755CDE;
+    cursor: pointer;
+}
 
-
-
-
-
+.card5{
+    display: flex;
+    margin-top: 88px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #030303;
+    padding: 64px 81px 95px  81px;
+    border-radius: 8px;
+}
+.card5 .left h1{
+    font-family: 'Plus Jakarta Sans-700';
+    color: #fff;
+    line-height: 50.4px;
+}
+.card5 .left p{
+max-width:  540px;
+color: #FFF7F0;
+    font-family: 'Plus Jakarta Sans-500';
+    line-height: 28px;
+    font-size: 18px;
+}
+.card5 .right button{
+    border:none;
+    background-color: #EB7565;
+    border-radius: 10em;
+    color: #fff;
+    font-family: 'Plus Jakarta Sans-500';
+    font-size: 18px;
+    padding: 20px 45px ;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.card5 .right button:hover{
+    background-color: #F6A560;
+}
 footer{
     margin-top: 56px;
+}
+
+@media only screen and (max-width: 1226px) {
+.card2 .right{
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
+gap: 24px;
+}
+.card3 {
+    gap: 100px;
+}
+}
+@media only screen and (max-width: 1056px) {
+.card3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+        .card5 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
 }
