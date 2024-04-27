@@ -211,7 +211,9 @@ main .card1 p{
     font-size: 18px;
     line-height: 28px;
 }
-
+.card3 .left img{
+    max-width: 100%;
+}
 .card3 .right button{
     border: none;
     font-family: 'Plus Jakarta Sans-700';
